@@ -3,10 +3,10 @@
     <head></head>
 
     <body>
-        <form method="post" action="teste.php">
-            Nome: <input type="text" name="nome"><br>
+        <form method="post" action="login.php">
+            usuario: <input type="text" name="usuario"><br>
             <br>
-            Idade: <input type="text" name="idade"><br>
+            senha: <input type="password" name="senha"><br>
             <br>
             <input type="submit" value="enviar">
         </form>
