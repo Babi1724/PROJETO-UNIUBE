@@ -4,7 +4,7 @@
 
     <body>
         <form method="post" action="login.php">
-            usuario: <input type="text" name="usuario"><br>
+            cpf: <input type="text" name="cpf"><br>
             <br>
             senha: <input type="password" name="senha"><br>
             <br>

@@ -1,7 +1,7 @@
 <?php 
 
 session_start();
-if(!isset($SESSION['usuario'])|| $SESSION ['usuario'] == ''){
+if(!isset($SESSION['cpf'])|| $SESSION ['cpf'] == ''){
     header("Location:index.php")
     die;
 }
