@@ -1,6 +1,7 @@
 <html>
     <title>Primeira Aula</title>
-    <head></head>
+    <head>
+    </head>
 
     <body>
         <form method="post" action="login.php">

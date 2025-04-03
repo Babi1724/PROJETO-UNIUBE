@@ -1,13 +1,13 @@
 <?php 
 
 session_start();
-if(!isset($SESSION['cpf'])|| $SESSION ['cpf'] == ''){
-    header("Location:index.php")
+if(!isset($_SESSION['cpf']) || $_SESSION['cpf'] == ''){
+    header("Location:index.php");
     die;
 }
 
-if(!isset($SESSION['senha'])|| $SESSION ['senha'] == ''){
-    header("Location:index.php")
+if(!isset($_SESSION['senha']) || $_SESSION['senha'] == ''){
+    header("Location:index.php");
     die;
 }
 
