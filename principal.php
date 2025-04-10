@@ -17,7 +17,7 @@ include("autenticacao.php");
 </head>
 <body>
     <div style= "width:800px;margin:0 auto;">
-        <div style="min-height:100px; width:100%;background-color:rgb(198, 198, 252);";>
+        <div style="min-height:100px; width:100%;background-color:rgb(148, 148, 150);";>
             <div style="width:50%;float:left">
             <span style="padding-left:300px;font-size:20px"> Olá <?=$_SESSION['nome'];?></span>
             </div>
