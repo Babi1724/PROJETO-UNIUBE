@@ -28,4 +28,42 @@
             <input type="submit" value="ENVIAR">
             </div>
         </form>
+
+        <?php
+            include("conexao.php");
+
+            $sql = "select nome, cpf,senha from usuarios";
+            if(!$resultado = $conn->query($sql)){
+                die("erro");
+            }
+            ?>
+            <table>
+                <tr>
+                    <td>Nome</td>
+                    <td>CPF</td>
+                    <td>Senha</td>
+                    <td>Alterar</td>
+                    <td>Apagar</td>
+                </tr>
+            <?php
+            while($row = $resultado->fetch_assoc()){
+                ?>
+                <tr>
+                    <form method="post" action="alterarUsuario">
+                        <input type="hidden" name="cpfAnterior" value="<?=$row['cpf'];?>">
+                        <td>
+                            <input type="text" name="nome" value="<?=$row['nome'];?>">
+                        </td>
+                        <td><input type="text" name="cpf" value="<?=$row['cpf'];?>"></td>
+                        <td><input type="text" name="senha" value="<?=$row['senha'];?>"></td>
+                        <td><input type="submit" value="alterar"></td>
+                    </form>
+                    <form method="post" action="apagarUsuario.php">
+                        <input type="hidden" name="cpfAnterior" value="<?=$row['cpf'];?>">
+                        <td><input type="submit" value="apagar"></td>
+                    </form>
+                </tr>
+                <?php
+            }
+        ?>    </table>
 </html>
