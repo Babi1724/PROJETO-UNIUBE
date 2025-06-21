@@ -15,3 +15,5 @@ if(!$resultado = $conn->query($sql)){
     die("erro");
 }
 header("location:cadastroUsuarios.php");
+
+?>

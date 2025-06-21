@@ -39,5 +39,6 @@
             <input type="submit" value="ENVIAR">
             </div>
         </form>
+        <a href="cadastrarUsuarios.php" class="register-link">Cadastrar Usuário</a>
     </body>
 </html>
