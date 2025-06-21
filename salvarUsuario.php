@@ -19,5 +19,10 @@
             echo'erro';
 
         }
+        $stmt->close();
+    } else{
+        echo"erro";
     }
+
+    $conn->close();
 ?>
