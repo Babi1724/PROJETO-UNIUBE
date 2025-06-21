@@ -28,12 +28,16 @@ include("autenticacao.php");
         </div>
         <div id="menu" style="width:200px;background-color:#f4f4f4;min-height:400px;float:left;text-align:center">
             <h2>Menu</h2>
-            <p><a href="item.php"><font color="black">Item 1 </font></a></p>
-            <p>Item 2 </p>
+            <p><a href="cadastrarUsuario.php"><font color="black">Gerenciar Usuarios </font></a></p>
+            <p><a href="cadastroFilmes.php"><font color="black">Cadastrar Filmes</font></a></p>
             <p>Item 3 </p>
     </div>
 
     <div style= "background-color: #ddd;min-height:400px;width:600px;float:left;text-align:center">
-        <h2>Manutenção de filmes</h2>
+        <h2>Bem-Vindo á Locadora Fenix!</h2>
+        <p>Esta é a pagina principal da locadora. Aqui você pode navegar para diferentes seções para uma experiencia prória.</p>
+        <p>Utilize o menu lateral para cadastrar novos usuários, adicionar filmes à coleção ou realizar outras tarefas.</p>
+        <p>Aproveite a experiência!</p>
+    </div>
 </body>
 </html>
